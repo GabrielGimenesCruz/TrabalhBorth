@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+     crossorigin="anonymous">
+     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+     crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+ <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+   <a class="navbar-brand" href="#"><img src="imagens/image.png" alt="" style="width: 50px; height: 50px;"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="listar-Usuarios.html">Listar</a>
+        </li>
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Cadastros
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="usuario-cadastrar.html">Usuario</a></li>
+            <li><a class="dropdown-item" href="usuario-cliente.html">Cliente</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="cadastro-produto.html">Produto</a></li>
+          </ul>
+        </li
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!-- ----------------- -->
+<div class="card">
+  <h5 class="card-header">Listar</h5>
+  <div class="card-body">
+    <h5 class="card-title">Adicionar produto a listagem</h5>
+
+    <a href="cadastro-produto.html" class="btn btn-primary">Adicionar</a>
+  </div>
+</div>
+<br>
+<div class="card">
+  <h5 class="card-header">Pesquisar</h5>
+  <div class="card-body">
+    <h5 class="card-title"></h5>
+    <p class="card-text">Digite o nome:</p>
+
+   <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Nome" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+      </form>
+</nav>
+  </div>
+</div>
+<br>
+<table class="table table-striped">
+ 
+  <tr>
+    <th>Nome</th>
+    <th>Peso (kg)</th>
+    <th>Valor (R$)</th>
+    <th>Estoque</th>
+    <th>Ações</th>
+  </tr>
+  <tr>
+    <td>Banana</td>
+    <td>1.2</td>
+    <td>5,00</td>
+    <td>50</td>
+    <td><button>Editar</button> <button>Excluir</button></td>
+  </tr>
+  <tr>
+    <td>Maçã</td>
+    <td>0.8</td>
+    <td>4,50</td>
+    <td>30</td>
+    <td><button>Editar</button> <button>Excluir</button></td>
+  </tr>
+  <tr>
+    <td>Laranja</td>
+    <td>1.0</td>
+    <td>6,00</td>
+    <td>40</td>
+    <td><button>Editar</button> <button>Excluir</button></td>
+  </tr>
+  <tr>
+    <td>Melancia</td>
+    <td>5.0</td>
+    <td>20,00</td>
+    <td>10</td>
+    <td><button>Editar</button> <button>Excluir</button></td>
+  </tr>
+</table>
+
+
+
+</body>
+</html>
